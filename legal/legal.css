@@ -1,0 +1,238 @@
+:root {
+  color-scheme: dark;
+  --sf-bg: #07051A;
+  --sf-bg-mid: #0b0724;
+  --sf-bg-top: #171034;
+  --sf-red: #E24B4A;
+  --sf-red-light: #ff6b6a;
+  --sf-text: #ffffff;
+  --sf-muted: rgba(255, 255, 255, 0.62);
+  --sf-muted-2: rgba(255, 255, 255, 0.45);
+  --sf-card: rgba(255, 255, 255, 0.04);
+  --sf-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 18px 72px;
+  line-height: 1.65;
+  color: var(--sf-text);
+  background:
+    radial-gradient(1100px 640px at 50% -8%, var(--sf-bg-top) 0%, var(--sf-bg-mid) 46%, var(--sf-bg) 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--sf-red-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.legal-header {
+  margin-bottom: 1.1rem;
+}
+
+.legal-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.legal-brand:hover {
+  text-decoration: none;
+}
+
+.legal-logo {
+  display: block;
+  height: 44px;
+  width: 44px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  object-fit: cover;
+}
+
+.legal-wordmark {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  line-height: 1;
+}
+
+.legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.95rem;
+  color: var(--sf-muted);
+}
+
+.legal-nav a {
+  color: var(--sf-muted);
+  font-weight: 500;
+}
+
+.legal-nav a:hover {
+  color: #fff;
+}
+
+.legal-nav .sep {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.legal-nav strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: clamp(2.1rem, 5vw, 2.8rem);
+  margin: 0 0 0.55rem;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.75rem;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.02rem;
+  margin: 1.25rem 0 0.5rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+p {
+  margin: 0.75rem 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+ul,
+ol {
+  padding-left: 1.35rem;
+  margin: 0.75rem 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+.legal-meta {
+  background: var(--sf-card);
+  border: 1px solid var(--sf-border);
+  border-radius: 16px;
+  padding: 1rem 1.15rem;
+  margin: 1.25rem 0 2rem;
+  font-size: 0.92rem;
+  color: var(--sf-muted);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.legal-meta p {
+  margin: 0.3rem 0;
+  color: var(--sf-muted);
+}
+
+.legal-meta strong {
+  color: #fff;
+}
+
+.muted {
+  color: var(--sf-muted);
+  font-size: 0.98rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.25rem;
+  font-size: 0.92rem;
+}
+
+th,
+td {
+  border: 1px solid var(--sf-border);
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--sf-border);
+  color: var(--sf-muted-2);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--sf-muted);
+}
+
+.policy-section {
+  margin-top: 2rem;
+}
+
+.policy-section > h2 {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 1.5px;
+  color: var(--sf-red-light);
+  margin-bottom: 0.85rem;
+  font-weight: 400;
+}
+
+.policy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.policy-list li {
+  margin-bottom: 0.65rem;
+}
+
+.policy-list a {
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid rgba(226, 75, 74, 0.45);
+}
+
+.policy-list a:hover {
+  color: var(--sf-red-light);
+  border-bottom-color: var(--sf-red);
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 20px 14px 56px;
+  }
+
+  .legal-wordmark {
+    font-size: 22px;
+  }
+}
